@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Egitim_Icerigi
 {
-    internal class Program
+    class BoxingUnBoxing
     {
-        static void Main(string[] args)
+         public static void Fonk()
         {
             //kutulama- boxing
             int i = 23;
@@ -17,8 +17,8 @@ namespace Egitim_Icerigi
             //kutudan cikarma-unboxing
             i *= 2;
             i = (int)o;//cast
-            Console.WriteLine("Value type:{0}",i);
-            Console.WriteLine("Reference type:{0}",o);
+            Console.WriteLine("Value type:{0}", i);
+            Console.WriteLine("Reference type:{0}", o);
         }
     }
 }
