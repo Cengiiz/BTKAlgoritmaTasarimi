@@ -8,6 +8,9 @@ namespace Egitim_Icerigi
 {
     internal class IfElseYapisi
     {
+        /// <summary>
+        /// if else yapisinin and or yapisinin kullanimi
+        /// </summary>
         public static void Fonk()
         {
             Console.WriteLine("-----besinci ders uygulamasi-----");
@@ -30,7 +33,46 @@ namespace Egitim_Icerigi
             {
                 Console.WriteLine("Karakter alfanumerik bir ifade degildir");
             }
+
+            bool result = true;
+            if (!result)
+            {
+                Console.WriteLine("Sonuc 1");
+            }
+            else
+            {
+                Console.WriteLine("Sonuc 2");
+            }
+
+            int m = 9;
+            int n = 7;
+            int p = 5;
+
+            if (m>=n&&m>=p)
+            {
+                Console.WriteLine("En buyuk m");
+            }
+            if (m>n&&!(p>m))
+            {
+                Console.WriteLine("En buyuk m");
+            }
+            if (m>n||m>p)
+            {
+                Console.WriteLine("m en kucuk degil!");
+            }
+            m = 4;
+            if (!(m>=n||m>p))
+            {
+                Console.WriteLine("m artik en kucuk");
+            }
+
+
             Console.Read();
+
+
+
+
+
         }
     }
 }
