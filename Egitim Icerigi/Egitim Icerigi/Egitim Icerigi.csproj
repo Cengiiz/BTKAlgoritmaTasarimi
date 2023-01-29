@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{625F95B3-9F05-41C5-A89A-7E9D048CCD80}</ProjectGuid>
+    <ProjectGuid>{CD6FA01E-A4C8-4A41-8604-F8EEA00DD0C8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Değişken_Uygulaması</RootNamespace>
-    <AssemblyName>Değişken Uygulaması</AssemblyName>
+    <RootNamespace>Egitim_Icerigi</RootNamespace>
+    <AssemblyName>Egitim Icerigi</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vars.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

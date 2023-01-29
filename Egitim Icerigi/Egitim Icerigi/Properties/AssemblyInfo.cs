@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Değişken Uygulaması")]
+[assembly: AssemblyTitle("Egitim Icerigi")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Değişken Uygulaması")]
+[assembly: AssemblyProduct("Egitim Icerigi")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("625f95b3-9f05-41c5-a89a-7e9d048ccd80")]
+[assembly: Guid("cd6fa01e-a4c8-4a41-8604-f8eea00dd0c8")]
 
 // Version information for an assembly consists of the following four values:
 //

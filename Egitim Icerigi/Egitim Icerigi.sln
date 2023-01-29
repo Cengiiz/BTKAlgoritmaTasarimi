@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Değişken Uygulaması", "Değişken Uygulaması\Değişken Uygulaması.csproj", "{625F95B3-9F05-41C5-A89A-7E9D048CCD80}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Egitim Icerigi", "Egitim Icerigi\Egitim Icerigi.csproj", "{CD6FA01E-A4C8-4A41-8604-F8EEA00DD0C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{625F95B3-9F05-41C5-A89A-7E9D048CCD80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{625F95B3-9F05-41C5-A89A-7E9D048CCD80}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{625F95B3-9F05-41C5-A89A-7E9D048CCD80}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{625F95B3-9F05-41C5-A89A-7E9D048CCD80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD6FA01E-A4C8-4A41-8604-F8EEA00DD0C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD6FA01E-A4C8-4A41-8604-F8EEA00DD0C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD6FA01E-A4C8-4A41-8604-F8EEA00DD0C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD6FA01E-A4C8-4A41-8604-F8EEA00DD0C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F7D477CD-1906-4235-8FCF-2D1D1BED858E}
+		SolutionGuid = {4E00BEB4-A4BF-4CB0-AE09-EFAB17305479}
 	EndGlobalSection
 EndGlobal
