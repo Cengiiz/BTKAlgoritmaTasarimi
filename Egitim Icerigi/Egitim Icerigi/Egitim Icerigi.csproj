@@ -49,6 +49,7 @@
     <Compile Include="MutlakDeger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RakamlariTopla.cs" />
     <Compile Include="SabitlerUygulama.cs" />
     <Compile Include="SwitchCase.cs" />
     <Compile Include="TPD1Sayi.cs" />
