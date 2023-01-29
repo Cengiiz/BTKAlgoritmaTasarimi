@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsalSayi.cs" />
     <Compile Include="BoxingUnBoxing.cs" />
     <Compile Include="IfElseYapisi.cs" />
     <Compile Include="MutlakDeger.cs" />
