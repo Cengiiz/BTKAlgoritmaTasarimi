@@ -10,6 +10,7 @@ namespace Egitim_Icerigi
     {
          public static void Fonk()
         {
+            Console.WriteLine("-----Ikinci ders uygulamasi-----");
             //kutulama- boxing
             int i = 23;
             object o = (object)i;//explict boxing
@@ -19,6 +20,7 @@ namespace Egitim_Icerigi
             i = (int)o;//cast
             Console.WriteLine("Value type:{0}", i);
             Console.WriteLine("Reference type:{0}", o);
+            Console.Read();
         }
     }
 }

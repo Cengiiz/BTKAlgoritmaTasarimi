@@ -46,6 +46,7 @@
     <Compile Include="BoxingUnBoxing.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SabitlerUygulama.cs" />
     <Compile Include="Vars.cs" />
   </ItemGroup>
   <ItemGroup>

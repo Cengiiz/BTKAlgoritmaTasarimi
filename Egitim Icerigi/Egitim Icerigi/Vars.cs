@@ -23,6 +23,8 @@ namespace Egitim_Icerigi
             int sayi = 23;
             sayi = sayi * 2;
             //Console.WriteLine(sayi);
+
+            Console.WriteLine("-----Ilk ders uygulamasi-----");
             Console.WriteLine("Byte -> Min:{0} \t Max:{1}", minbyte, maxbyte);
             Console.WriteLine("Int16 -> Min:{0} \t Max:{1}", min, max);
             Console.WriteLine("Int32 -> Min:{0} \t Max:{1}", min32, max32);
