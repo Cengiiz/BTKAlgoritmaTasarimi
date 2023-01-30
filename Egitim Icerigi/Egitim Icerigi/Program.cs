@@ -10,7 +10,9 @@ namespace Egitim_Icerigi
     {
         static void Main(string[] args)
         {
-            
+            StringUygulamalari.Desen2();
+            StringUygulamalari.Desen2('-');
+            StringUygulamalari.Desen2('?',10);
         }
     }
 }
