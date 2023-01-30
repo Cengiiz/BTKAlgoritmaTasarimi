@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AsalSayi.cs" />
     <Compile Include="BoxingUnBoxing.cs" />
+    <Compile Include="AlanCevre.cs" />
     <Compile Include="NeKadarToplam.cs" />
     <Compile Include="IfElseYapisi.cs" />
     <Compile Include="MutlakDeger.cs" />
