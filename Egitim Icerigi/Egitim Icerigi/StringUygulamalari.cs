@@ -36,7 +36,7 @@ namespace Egitim_Icerigi
             }
             Console.Read();
         }
-        public static void KarakterSeti(int baslangicIndisi=65,int bitisIndisi=90,int satirkarakterSayisi)
+        public static void KarakterSeti(int baslangicIndisi=65,int bitisIndisi=90,int satirkarakterSayisi=5)
         {
             for (int i = baslangicIndisi; i <= bitisIndisi; i++)
             {

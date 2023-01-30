@@ -15,5 +15,6 @@ namespace Egitim_Icerigi
                 s *= taban;
             return s;
         }
+
     }
 }
