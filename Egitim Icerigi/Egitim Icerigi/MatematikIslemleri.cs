@@ -15,6 +15,38 @@ namespace Egitim_Icerigi
                 s *= taban;
             return s;
         }
-
+        public static int[] AsalCarpanlar(int sayi)
+        {
+            string carpanListesi = "";
+            int sayi2 = sayi;
+            int[] carpanlar_listesi;
+            int i = 2;
+            int a = 0;
+            while (sayi2 > 1)
+            {
+                if (sayi2 % i == 0)
+                {
+                    sayi2 /= i;
+                    a++;
+                }
+                else
+                    i++;
+                
+            }
+            int x=0;
+            carpanlar_listesi = new int[a];
+            for (i = 2; i <a; i++)
+            {
+                if (sayi % i == 0)
+                {
+                    sayi /= i;
+                    x = i;
+                    carpanlar_listesi[i] = x;
+                }
+                
+            }
+            
+            return carpanlar_listesi;
+        }
     }
 }
