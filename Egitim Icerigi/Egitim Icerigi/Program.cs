@@ -10,7 +10,7 @@ namespace Egitim_Icerigi
     {
         static void Main(string[] args)
         {
-            
+
         }
     }
 }
