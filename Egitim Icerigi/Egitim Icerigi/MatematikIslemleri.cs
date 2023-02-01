@@ -8,6 +8,18 @@ namespace Egitim_Icerigi
 {
     internal class MatematikIslemleri
     {
+        public static void Fonk()
+        {
+            int[] deneme = MatematikIslemleri.AsalCarpanlar(60);
+            for (int i = 0; i < deneme.Length; i++)
+            {
+                Console.Write("{0,5}", deneme[i]);
+            }
+            Console.WriteLine("");
+            Console.WriteLine(MatematikIslemleri.AsalCarpanlarToplami(60));
+            Console.WriteLine(MatematikIslemleri.AsalCarpanlarCarpimi(60));
+            Console.ReadLine();
+        }
         public static double UstAlma(double taban,double kuvvet)
         {
             double s = 1;
@@ -33,20 +45,44 @@ namespace Egitim_Icerigi
                     i++;
                 
             }
-            int x=0;
+            int index = 0;
+            int k = 2;
             carpanlar_listesi = new int[a];
-            for (i = 2; i <a; i++)
+            while(sayi>1)
             {
-                if (sayi % i == 0)
+                if (sayi % k == 0)
                 {
-                    sayi /= i;
-                    x = i;
-                    carpanlar_listesi[i] = x;
+                    sayi /= k;
+                    carpanlar_listesi[index] = k;
+                    index++;
                 }
+                else
+                    k++;
                 
             }
-            
+            carpanlar_listesi = carpanlar_listesi.Distinct().ToArray();
             return carpanlar_listesi;
+        }
+
+        public static int AsalCarpanlarToplami(int sayi)
+        {
+            int toplam = 0;
+            int[] asalcarpanlar=AsalCarpanlar(sayi);
+            for (int i = 0; i < asalcarpanlar.Length; i++)
+            {
+                toplam += asalcarpanlar[i];
+            }
+            return toplam;
+        }
+        public static int AsalCarpanlarCarpimi(int sayi)
+        {
+            int carpim = 1;
+            int[] asalcarpanlar = AsalCarpanlar(sayi);
+            for (int i = 0; i < asalcarpanlar.Length; i++)
+            {
+                carpim *= asalcarpanlar[i];
+            }
+            return carpim;
         }
     }
 }

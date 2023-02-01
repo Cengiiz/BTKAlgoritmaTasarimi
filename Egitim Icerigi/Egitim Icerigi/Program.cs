@@ -10,12 +10,7 @@ namespace Egitim_Icerigi
     {
         static void Main(string[] args)
         {
-            int[] deneme = MatematikIslemleri.AsalCarpanlar(60);
-            for (int i = 0; i < deneme.Length; i++)
-            {
-                Console.Write("{0,5}", deneme[i]);
-            }
-            Console.ReadLine();
+            
         }
     }
 }
