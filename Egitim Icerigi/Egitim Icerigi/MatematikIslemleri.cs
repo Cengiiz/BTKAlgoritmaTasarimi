@@ -156,5 +156,71 @@ namespace Egitim_Icerigi
             return ekok;
         }
 
+        public static int EBOB(int a,int b)
+        {
+            int a2 = a;
+            int b2 = b;
+            int i = 2;
+            int k = 0;
+            while (a2 > 1 || b2 > 1)
+            {
+                if (a2 % i == 0 && b2 % i == 0)
+                {
+                    a2 /= i;
+                    b2 /= i;
+                    k++;
+                }
+                else if (a2 % i == 0)
+                {
+                    a2 /= i;
+
+                }
+                else if (b2 % i == 0)
+                {
+                    b2 /= i;
+                }
+                else
+                {
+                    i++;
+                }
+            }
+            int[] bolum = new int[k];
+            i = 2;
+            k = 0;
+            while (a > 1 || b > 1)
+            {
+                if (a % i == 0 && b % i == 0)
+                {
+                    a /= i;
+                    b /= i;
+                    bolum[k] = i;
+                    k++;
+                }
+                else if (a % i == 0)
+                {
+                    a /= i;
+
+                }
+                else if (b % i == 0)
+                {
+                    b /= i;
+                }
+                else
+                {
+                    i++;
+                }
+            }
+            int ebob = 1;
+            bolum = bolum.Distinct().ToArray();
+            for (i = 0; i < bolum.Length; i++)
+            {
+                ebob *= bolum[i];
+            }
+
+
+            return ebob;
+        }
+
+
     }
 }

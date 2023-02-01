@@ -10,7 +10,9 @@ namespace Egitim_Icerigi
     {
         static void Main(string[] args)
         {
-
+            int a=MatematikIslemleri.EBOB(18, 24);
+            Console.WriteLine(a);
+            Console.ReadLine();
         }
     }
 }
