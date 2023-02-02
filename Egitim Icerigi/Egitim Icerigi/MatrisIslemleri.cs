@@ -65,6 +65,42 @@ namespace Egitim_Icerigi
                 matris[i, i] = x;
             return matris;
         }
+        public static int[,] SkalerMatris(int boyut = 3, int min = 1, int max = 9)
+        {
+            int x = new Random().Next(min, max);
+            int[,] matris = SifirMatrisi(boyut, boyut);
+            for (int i = 0; i < boyut; i++)
+                matris[i, i] = x;
+            return matris;
+        }
+        public static bool KareMatrisMi(int[,] matris)
+        {
+            return matris.GetLength(0) == matris.GetLength(1) ? true : false;
+        }
+        public static int[,] BirimMatrisOlustur(int boyut = 3)
+        {
+            return SkalerMatris(boyut, 1);
+        }
+        public static bool BirimMatrisMi(int[,] matris)
+        {
+            bool kose = false;
+            bool diger = false;
+            for (int i = 0; i < matris.GetLength(0); i++)
+            {
+                for (int j = 0; j < matris.GetLength(1); j++)
+                {
+                    if (i == j)
+                    {
+                        kose = (matris[i, j] == 1) ? true : false;
+                    }
+                    else
+                    {
+                        diger = (matris[i, j] == 0) ? true : false;
+                    }
+                }
+            }
+            return (kose == true && diger == true ? true : false);
+        }
         
 
     }
