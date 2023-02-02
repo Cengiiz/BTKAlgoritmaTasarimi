@@ -10,15 +10,20 @@ namespace Egitim_Icerigi
     {
         public static void Fonk( )
         {
-            var deneme = Izi(Olustur());
+            var deneme = Olustur(3,4);
+            Yazdir(deneme);
+            var x=YenidenSekillendir(deneme,2,6);
+
+
+
         }
         public static int[,] Olustur(int satir = 3, int sutun = 3, int min = 1, int max = 9)
         {
             int[,] matris = new int[satir, sutun];
-
-            for (int i = 0; i < sutun; i++)
+            int a = 0;
+            for (int i = 0; i < satir; i++)
                 for (int j = 0; j < sutun; j++)
-                    matris[i, j] = new Random().Next(min, max);
+                    matris[i, j] = a++;//new Random().Next(min, max);
 
 
             return matris;
@@ -35,6 +40,14 @@ namespace Egitim_Icerigi
 
                 }
                 Console.WriteLine();
+            }
+        }
+        public static void Yazdir(int[] matris)
+        {
+
+            for (int i = 0; i < matris.Length; i++)
+            {
+                    Console.Write("{0},",matris[i]);
             }
         }
 
@@ -120,6 +133,43 @@ namespace Egitim_Icerigi
             }
             return 0;
         }
+        public static int[,] Transpoz(int[,] matris)
+        {
+            int[,] tmp = new int[matris.GetLength(1), matris.GetLength(0)];
+            for (int i = 0; i < matris.GetLength(0); i++)
+                for (int j = 0; j < matris.GetLength(0); j++)
+                    tmp[j, i] = matris[i, j];
+            return tmp;
+        }
 
+        public static int[] MatristoArray(int[,] matris)
+        {
+            int[] degerler = new int[matris.Length];
+            int sayac = 0;
+            for (int i = 0; i < matris.GetLength(0); i++)
+                for (int j = 0; j < matris.GetLength(1); j++)
+                {
+                    degerler[sayac] = matris[i,j];
+                    sayac++;
+                }
+
+            Yazdir(degerler);
+            return new int[1];
+        }
+        public static int[,] YenidenSekillendir(int[,] matris, int yeniSatir, int yeniSutun)
+        {
+            int[] degerler = MatristoArray(matris);
+            int[,] newMatrix = new int[yeniSatir, yeniSutun];
+            int index = 0;
+            for (int i = 0; i < yeniSatir; i++)
+                for (int j = 0; j < yeniSutun; j++)
+                {
+                    newMatrix[i, j] = degerler[index];
+                    index++;
+                }
+
+            Yazdir(newMatrix);
+            return matris;
+        }
     }
 }
