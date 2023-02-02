@@ -37,8 +37,14 @@ namespace Egitim_Icerigi
                 Console.WriteLine();
             }
         }
-        
 
+        public static int[,] SifirMatrisi(int satir = 3, int sutun = 3)
+        {
+            int[,] matris = Olustur(satir, sutun, 0, 0);
+
+            return matris;
+        }
+        
 
     }
 }
