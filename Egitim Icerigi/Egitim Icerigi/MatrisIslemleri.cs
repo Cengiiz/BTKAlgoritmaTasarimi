@@ -44,6 +44,12 @@ namespace Egitim_Icerigi
 
             return matris;
         }
+        public static int[,] BirlerMatrisi(int satir = 3, int sutun = 3)
+        {
+            int[,] matris = Olustur(satir, sutun, 1, 1);
+
+            return matris;
+        }
         
 
     }
