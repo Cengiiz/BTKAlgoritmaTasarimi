@@ -49,6 +49,7 @@
     <Compile Include="Diziler.cs" />
     <Compile Include="ForDonguUygulamalari.cs" />
     <Compile Include="MatematikIslemleri.cs" />
+    <Compile Include="MatrisIslemleri.cs" />
     <Compile Include="NeKadarToplam.cs" />
     <Compile Include="IfElseYapisi.cs" />
     <Compile Include="MutlakDeger.cs" />
