@@ -101,7 +101,25 @@ namespace Egitim_Icerigi
             }
             return (kose == true && diger == true ? true : false);
         }
-        
+        public static int[] DiyagonelElemanlar(int[,] matris)
+        {
+            int[] arr = new int[matris.GetLength(0)];
+            for (int i = 0; i < matris.GetLength(0); i++)
+                arr[i] = matris[i, i];
+            return arr;
+        }
+        public static int Izi(int[,] matris)
+        {
+            int toplam = 0;
+            if (KareMatrisMi(matris))
+            {
+                int[] diyagonel = DiyagonelElemanlar(matris);
+                for (int i = 0; i < diyagonel.Length; i++)
+                    toplam += diyagonel[i];
+                return toplam;
+            }
+            return 0;
+        }
 
     }
 }
