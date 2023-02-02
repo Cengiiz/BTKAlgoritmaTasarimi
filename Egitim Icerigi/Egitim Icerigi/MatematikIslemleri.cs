@@ -10,15 +10,13 @@ namespace Egitim_Icerigi
     {
         public static void Fonk()
         {
-            int[] deneme = MatematikIslemleri.AsalCarpanlar(60);
-            for (int i = 0; i < deneme.Length; i++)
-            {
-                Console.Write("{0,5}", deneme[i]);
-            }
-            Console.WriteLine("");
-            Console.WriteLine(MatematikIslemleri.AsalCarpanlarToplami(60));
-            Console.WriteLine(MatematikIslemleri.AsalCarpanlarCarpimi(60));
+            
+            var deneme = MatematikIslemleri.BinaryToDecimal("11010001000111010010101011000101111101");
+
+            Console.Write("{0,5}", deneme);
+
             Console.ReadLine();
+
         }
         public static double UstAlma(double taban,double kuvvet)
         {
@@ -220,7 +218,55 @@ namespace Egitim_Icerigi
 
             return ebob;
         }
+        public static long Fakt(long sayi)
+        {
+            long fakt = 1;
+            while (sayi>0)
+            {
+                fakt *= sayi;
+                sayi--;
+            }
+            return fakt;
+        }
+        public static double AralikliFakt(int sayi1,int sayi2)
+        {
+            long t = 0;
+            int k = sayi1 > sayi2 ? sayi2 : sayi1;
+            int b = sayi1 > sayi2 ? sayi1 : sayi2;
+            for (int i = k; i < b+1; i++)
+                t += Fakt(i);
+            return t/((b-k)+1);
+        }
 
+        public static int[] StringToIntArr(string str)
+        {
+            string[] a = str.Split(',');
+            int[] sayilar = new int[a.Length];
+            for (int i = 0; i < a.Length; i++)
+            {
+                sayilar[i] =Convert.ToInt32(a[i]);
+            }
+
+
+            return sayilar;
+        }
+        public static double BinaryToDecimal(string str)
+        {
+            string[] newStr = new string[str.Length];
+            int i = 0;
+            int a = 0;
+            for (i = str.Length-1; i >=0 ; i--)
+            {
+                newStr[a] = str[i].ToString();
+                a++;
+            }
+            double dcml = 0;
+            for (i = 0; i < str.Length; i++)
+            {
+                dcml += (Convert.ToInt16(newStr[i]) * Math.Pow(2, i));
+            }
+            return dcml;
+        }
 
     }
 }
