@@ -23,8 +23,21 @@ namespace Egitim_Icerigi
 
             return matris;
         }
-        
 
+        public static void Yazdir(int[,] matris)
+        {
+
+            for (int i = 0; i < matris.GetLength(0); i++)
+            {
+                for (int j = 0; j < matris.GetLength(1); j++)
+                {
+                    Console.Write(matris[i, j]);
+
+                }
+                Console.WriteLine();
+            }
+        }
+        
 
 
     }
