@@ -50,6 +50,21 @@ namespace Egitim_Icerigi
 
             return matris;
         }
+        public static int[,] KosegenMatris(int boyut = 3, int min = 1, int max = 9)
+        {
+            int[,] matris = SifirMatrisi(boyut, boyut);
+            for (int i = 0; i < boyut; i++)
+                matris[i, i] = new Random().Next(min, max);
+            return matris;
+        }
+        public static int[,] SkalerMatris(int boyut = 3, int skaler = 1)
+        {
+            int x = skaler;
+            int[,] matris = SifirMatrisi(boyut, boyut);
+            for (int i = 0; i < boyut; i++)
+                matris[i, i] = x;
+            return matris;
+        }
         
 
     }
