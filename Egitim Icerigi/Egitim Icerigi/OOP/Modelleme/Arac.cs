@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Egitim_Icerigi.OOP.Modelleme
 {
-    public class Arac
+    public class Arac:Tasit
     {
         #region Fields Degiskenleri
         private string marka, model, renk;
@@ -30,11 +31,23 @@ namespace Egitim_Icerigi.OOP.Modelleme
             Renk = reng;
             Yil = yil;
         }
+         
         #endregion
         #region Methods
         public void Calistir() => Console.WriteLine("Arac calisti");
         public void Durdur() => Console.WriteLine("Arac durdu");
-        #endregion
+        
+        public override string ToString()
+        {
+            Console.WriteLine(Marka);
+            Console.WriteLine(Model);
+            Console.WriteLine(Renk);
+            Console.WriteLine(Yil);
+            Console.WriteLine(Motor);
+            Console.WriteLine(Hacim);
+            return "";
+        }
 
+        #endregion
     }
 }
