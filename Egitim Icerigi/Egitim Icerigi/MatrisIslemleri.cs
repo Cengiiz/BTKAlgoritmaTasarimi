@@ -211,5 +211,18 @@ namespace Egitim_Icerigi
                 
         }
 
+        public static int[,] SkalerCarpim(int[,] matris,int sabit)
+        {
+            for (int i = 0; i < matris.GetLength(0); i++)
+            {
+                for (int j = 0; j < matris.GetLength(1); j++)
+                {
+                    matris[i, j] = sabit * matris[i, j];
+                }
+            }
+
+
+            return matris;
+        }
     }
 }
