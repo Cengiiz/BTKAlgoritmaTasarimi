@@ -10,9 +10,9 @@ namespace Egitim_Icerigi
     {
         public static void Fonk( )
         {
-            var deneme = Olustur(3,4);
-            Yazdir(deneme);
-            var x=YenidenSekillendir(deneme,2,6);
+            var deneme = Karsilastir(Olustur(3, 4), Olustur(5, 4));
+            Console.WriteLine(deneme);
+            
 
 
 
@@ -36,7 +36,7 @@ namespace Egitim_Icerigi
             {
                 for (int j = 0; j < matris.GetLength(1); j++)
                 {
-                    Console.Write(matris[i, j]);
+                    Console.Write("  "+matris[i, j]);
 
                 }
                 Console.WriteLine();
@@ -49,6 +49,7 @@ namespace Egitim_Icerigi
             {
                     Console.Write("{0},",matris[i]);
             }
+            Console.WriteLine();
         }
 
         public static int[,] SifirMatrisi(int satir = 3, int sutun = 3)
@@ -152,9 +153,7 @@ namespace Egitim_Icerigi
                     degerler[sayac] = matris[i,j];
                     sayac++;
                 }
-
-            Yazdir(degerler);
-            return new int[1];
+            return degerler;
         }
         public static int[,] YenidenSekillendir(int[,] matris, int yeniSatir, int yeniSutun)
         {
@@ -167,9 +166,29 @@ namespace Egitim_Icerigi
                     newMatrix[i, j] = degerler[index];
                     index++;
                 }
-
-            Yazdir(newMatrix);
             return matris;
         }
+
+        public static bool Karsilastir(int[,] x, int[,] y)
+        {
+            
+            if (x.GetLength(0)==y.GetLength(0)&& x.GetLength(1) == y.GetLength(1))
+            {
+                for (int i = 0; i < x.GetLength(0); i++)
+                {
+                    for (int j = 0; j < x.GetLength(1); j++)
+                    {
+                        if (x[i, j] == y[i, j])
+                            return true;
+                        else
+                            return false;
+                    }
+                }
+            }
+            return false;
+        }
+
+
+
     }
 }
