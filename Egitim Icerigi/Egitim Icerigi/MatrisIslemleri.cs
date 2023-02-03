@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -224,5 +225,41 @@ namespace Egitim_Icerigi
 
             return matris;
         }
+        public static int ElamanlariToplami(int[,] matris)
+        {
+            int toplam = 0;
+            for (int i = 0; i < matris.GetLength(0); i++)
+            {
+                for (int j = 0; j < matris.GetLength(1); j++)
+                {
+                    toplam+= matris[i, j];
+                }
+            }
+            return toplam;
+        }
+
+        public static int[,] SimetrikMatrisOlustur(int boyut=3,int min=1,int max=9)
+        {
+            int[,] matris = Olustur(boyut,boyut, min, max);
+            for (int i = 1; i < boyut; i++)
+            {
+                for (int j = 0; j < i-1; j++)
+                {
+                    matris[i, j] = new Random().Next(min, max);
+                    matris[j, i] = matris[i, j];
+                }
+            }
+            return matris;
+        }
+        public static bool SimetrikMi(int[,]matris)
+        {
+            int[,] matris2 = Transpoz(matris);
+
+
+            return Karsilastir(matris,matris2);
+        }
+
+
+
     }
 }
