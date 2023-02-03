@@ -53,6 +53,8 @@
     <Compile Include="NeKadarToplam.cs" />
     <Compile Include="IfElseYapisi.cs" />
     <Compile Include="MutlakDeger.cs" />
+    <Compile Include="OOP\Cizim\Dikdortgen.cs" />
+    <Compile Include="OOP\Cizim\Sekil.cs" />
     <Compile Include="OOP\Constructors\Kisi.cs" />
     <Compile Include="OOP\Extension Methods\StringExtension.cs" />
     <Compile Include="OOP\Modelleme\Arac.cs" />
