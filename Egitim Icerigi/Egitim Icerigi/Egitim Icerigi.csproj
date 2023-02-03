@@ -53,6 +53,9 @@
     <Compile Include="NeKadarToplam.cs" />
     <Compile Include="IfElseYapisi.cs" />
     <Compile Include="MutlakDeger.cs" />
+    <Compile Include="OOP\Constructors\Kisi.cs" />
+    <Compile Include="OOP\Extension Methods\StringExtension.cs" />
+    <Compile Include="OOP\Modelleme\Arac.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RakamlariTopla.cs" />
@@ -66,5 +69,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
