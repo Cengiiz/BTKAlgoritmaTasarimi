@@ -188,7 +188,28 @@ namespace Egitim_Icerigi
             return false;
         }
 
-
+        public static int Determinant(int[,] matris)
+        {
+            int d = -1;
+            if (KareMatrisMi(matris))
+            {
+                if (matris.Length == 4)
+                    d = matris[0, 0] * matris[1, 1] - matris[0, 1] * matris[1, 0];
+                else if (matris.Length == 9)
+                    d = matris[0, 0] * (matris[1, 1] * matris[2, 2] - matris[1, 2] * matris[2, 1]) -
+                        matris[0, 1] * (matris[1, 0] * matris[2, 2] - matris[2, 0] * matris[1, 2]) +
+                        matris[0, 2] * (matris[1, 0] * matris[2, 1] - matris[1, 1] * matris[2, 0]);
+                else
+                    Console.WriteLine("Tanimli bir boyut yok");
+                return d;
+            }
+            else
+            {
+                Console.WriteLine("Kare matris degildir");
+                return d;
+            }
+                
+        }
 
     }
 }
